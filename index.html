@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristenelle Seira S. Quindoza | Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Page</h1>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#hobbies">Hobbies</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Hi, I'm Kristenelle Seira S. Quindoza!</h2>
+            <img src="me.jpg" alt="Kristenelle Seira" class="profile-pic">
+            <p>I am a student currently learning the basics of web development. This is my one-page personal website for our performance task!</p>
+        </section>
+
+        <hr>
+
+        <section id="hobbies">
+            <h2>My Hobbies</h2>
+            <p>When I'm not studying, I enjoy playing mobile games with my friends.</p>
+            
+            <div class="hobby-grid">
+                <div class="hobby-card">
+                    <img src="mlbb.jpg" alt="Mobile Legends">
+                    <h3>Mobile Legends</h3>
+                    <p>Rank games and classic matches.</p>
+                </div>
+
+                <div class="hobby-card">
+                    <img src="codm.jpg" alt="Call of Duty">
+                    <h3>Call of Duty</h3>
+                    <p>Multiplayer and Battle Royale.</p>
+                </div>
+            </div>
+
+            <div class="js-section">
+                <button onclick="greetUser()">Click for a Special Message!</button>
+                <p id="js-output"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | Created by Kristenelle Seira S. Quindoza</p>
+    </footer>
+
+    <script>
+        // Internal JavaScript
+        function greetUser() {
+            const message = "Thanks for visiting my website! See you in the Land of Dawn or the battlefield!";
+            document.getElementById("js-output").innerHTML = message;
+            alert("Hello! I'm glad you're here.");
+        }
+    </script>
+
+</body>
+</html>
