@@ -1,7 +1,6 @@
 /* Simple Styling with Purple Background */
 body {
     font-family: Arial, sans-serif;
-    /* This changes the whole background to purple */
     background-color: #6a5acd; 
     margin: 0;
     padding: 0;
@@ -9,48 +8,73 @@ body {
 }
 
 header {
-    background-color: #483d8b; /* Darker purple for the top bar */
+    background-color: #483d8b;
     color: white;
     padding: 20px;
 }
 
 .container {
-    background-color: white; /* Keeps the middle part white so text is clear */
-    width: 80%;
+    background-color: white;
+    width: 85%;
+    max-width: 900px;
     margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px; /* Makes the corners a bit rounded */
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.3);
 }
 
-#about img {
-    border: 3px solid #483d8b;
+/* Styles the Profile Picture */
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Keeps the photo from stretching */
+    border: 4px solid #483d8b;
+    border-radius: 50%; /* Makes it a circle */
     margin-bottom: 15px;
-    border-radius: 5px;
 }
 
+/* Layout for the Game Cards */
 .hobby-grid {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
     margin-top: 20px;
-    flex-wrap: wrap; /* Helps it look good on phones */
+    flex-wrap: wrap;
+}
+
+.hobby-card {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+}
+
+.hobby-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 footer {
     background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 15px;
+    margin-top: 20px;
     font-size: 14px;
 }
 
 button {
     margin-top: 20px;
-    padding: 10px 20px;
+    padding: 12px 25px;
     background-color: #483d8b;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
 }
 
 button:hover {
